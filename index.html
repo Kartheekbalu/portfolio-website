@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for a frontend developer showcasing projects, skills, and contact information."
+    />
+    <title>Alex Carter | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#home" class="brand">Alex<span>Carter</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Frontend Developer</p>
+            <h1>Building clean, modern web experiences.</h1>
+            <p class="lead">
+              I design and develop responsive websites that balance great user experience,
+              performance, and visual appeal.
+            </p>
+            <div class="cta-group">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn secondary" href="#contact">Hire Me</a>
+            </div>
+            <ul class="social-links" aria-label="Social media links">
+              <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="mailto:alex@example.com">Email</a></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Profile summary">
+            <div class="card-glow"></div>
+            <div class="profile-box">
+              <div class="avatar">AC</div>
+              <div>
+                <h2>Alex Carter</h2>
+                <p>UI/UX Developer</p>
+              </div>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>4+</strong>
+                <span>Years Experience</span>
+              </div>
+              <div>
+                <strong>18</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>96%</strong>
+                <span>Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>Passionate about creating intuitive digital products.</h2>
+        </div>
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p>
+              I’m a frontend developer who enjoys turning ideas into polished, user-friendly
+              interfaces. My work focuses on accessibility, responsive design, and clean code
+              that helps brands communicate better online.
+            </p>
+            <p>
+              From landing pages to portfolio apps, I build experiences that feel smooth on any
+              device and reflect a strong attention to detail.
+            </p>
+          </div>
+          <div class="info-card">
+            <ul>
+              <li><span>Location</span><strong>New York, USA</strong></li>
+              <li><span>Email</span><strong>alex@example.com</strong></li>
+              <li><span>Specialty</span><strong>Web Design & Frontend</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt-bg">
+        <div class="container section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools and technologies I work with.</h2>
+        </div>
+        <div class="container skills-grid">
+          <div class="skill-card"><span>HTML5</span></div>
+          <div class="skill-card"><span>CSS3</span></div>
+          <div class="skill-card"><span>JavaScript</span></div>
+          <div class="skill-card"><span>React</span></div>
+          <div class="skill-card"><span>Bootstrap</span></div>
+          <div class="skill-card"><span>Figma</span></div>
+          <div class="skill-card"><span>Git</span></div>
+          <div class="skill-card"><span>Responsive Design</span></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Recent work.</h2>
+        </div>
+
+        <div class="container project-grid">
+          <article class="project-card">
+            <div class="project-thumb thumb-one"></div>
+            <div class="project-body">
+              <h3>Creative Studio</h3>
+              <p>Brand-focused landing page for a marketing studio with a bold visual system.</p>
+              <a href="#" aria-label="View Creative Studio project">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb thumb-two"></div>
+            <div class="project-body">
+              <h3>Finance Dashboard</h3>
+              <p>Data-rich dashboard concept designed to improve financial decision making.</p>
+              <a href="#" aria-label="View Finance Dashboard project">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb thumb-three"></div>
+            <div class="project-body">
+              <h3>E-commerce UI</h3>
+              <p>Modern storefront interface optimized for conversion and mobile shopping.</p>
+              <a href="#" aria-label="View E-commerce UI project">View Project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something great together.</h2>
+          </div>
+          <a class="btn primary" href="mailto:alex@example.com">alex@example.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Alex Carter. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
